@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  "use strict";
   //todo: open menu when click on menu icon
   $(".menuIcon").click(() => {
     if (window.screen.width < 768) {
@@ -83,9 +84,13 @@ $(document).ready(function () {
   $(".menuList li a").click((e) => {
     let section = $(e.target).attr("href");
     let sectionOffset = $(section).offset().top;
-    $("html, body").animate({ scrollTop: sectionOffset - 50 }, 450, (e) => {
-      $(".menuContent").animate({ right: `${rightOffset}px`, width: "0" }, 800);
-    });
+    $(".menuContent").animate(
+      { right: `${rightOffset}px`, width: "0" },
+      600,
+      (e) => {
+        $("html, body").animate({ scrollTop: sectionOffset - 50 }, 450);
+      }
+    );
   });
 
   //todo: create a function that make the countdown counter
