@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Techno Courses</title>
+    <link rel="shortcut icon" href="./imgs/favicon.png" type="image/x-icon" />
+    <!-- Google FONTS lINKS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awsome Link -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- Bootstrap Css Link -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- Main Css Link -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- scroll up btn -->
+    <button class="btn scrollUpBtn position-fixed px-3 py-2 d-none">
+      <i class="fa-solid fa-arrow-up fs-4"></i>
+    </button>
+    <!-- start of header sec -->
+    <header class="sticky-top bg-light shadow-lg">
+      <div class="container-sm">
+        <nav>
+          <div class="row justify-content-between align-items-center">
+            <div class="col-8 col-lg-4">
+              <div class="logo">
+                <a href="index.html" class="text-decoration-none fw-bolder"
+                  >Techno Courses</a
+                >
+              </div>
+            </div>
+            <div class="col-lg-4 d-none d-lg-block">
+              <div
+                class="socialIcons text-light d-flex justify-content-center align-items-center column-gap-2"
+              >
+                <div
+                  class="icon pointer d-flex justify-content-center align-items-center rounded-circle"
+                >
+                  <i class="fa-brands fa-facebook-f"></i>
+                </div>
+                <div
+                  class="icon pointer d-flex justify-content-center align-items-center rounded-circle"
+                >
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+                <div
+                  class="icon pointer d-flex justify-content-center align-items-center rounded-circle"
+                >
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+                <div
+                  class="icon pointer d-flex justify-content-center align-items-center rounded-circle"
+                >
+                  <i class="fa-brands fa-youtube"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 col-lg-4">
+              <div
+                class="menuIcon pointer rounded-circle d-flex justify-content-center align-items-center ms-auto"
+              >
+                <i class="fa-solid fa-bars fs-4"></i>
+              </div>
+              <!-- start of menu content -->
+              <div class="menuContent position-fixed vh-100">
+                <ul class="list-unstyled menuList">
+                  <li class="closeBtn pointer text-end">
+                    <i class="fa-solid fa-xmark text-light fs-4 p-3"></i>
+                  </li>
+                  <li class="my-4 pointer">
+                    <a href="#home" class="text-decoration-none text-light fs-4"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="my-4 pointer">
+                    <a
+                      href="#details"
+                      class="text-decoration-none text-light fs-4"
+                      >Details</a
+                    >
+                  </li>
+                  <li class="my-4 pointer">
+                    <a
+                      href="#duration"
+                      class="text-decoration-none text-light fs-4"
+                      >Duration</a
+                    >
+                  </li>
+                  <li class="my-4 pointer">
+                    <a
+                      href="#contact"
+                      class="text-decoration-none text-light fs-4"
+                      >Contact</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!-- end of menu content -->
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end of header section -->
+
+    <!-- start of main section -->
+    <!-- start of hero section -->
+    <section
+      id="home"
+      class="hero d-flex justify-content-center align-items-center text-light text-center"
+    >
+      <div class="container-sm">
+        <h1 class="mb-5 text-capitalize">
+          Level Up your <span>career Opportunities</span>
+        </h1>
+        <p class="fs-4 fw-light text-capitalize heroDesc mx-auto mb-5">
+          Deepen your programming knowledge and gain practical experience by
+          joining our online courses.
+        </p>
+        <button class="btn btn-outline-light heroBtn fs-5 fw-bolder px-5">
+          Learn More
+        </button>
+      </div>
+    </section>
+    <!-- end of hero section -->
+
+    <!-- start of accordion -->
+    <section class="accordion" id="details">
+      <div class="container-sm">
+        <div class="row align-items-center gy-5 justify-content-between">
+          <div class="col-xl-5">
+            <div
+              class="accordionImg mx-auto border border-4 rounded-3 mb-5 mb-xl-0"
+            >
+              <img
+                src="./imgs/online course.png"
+                alt="online courses"
+                class="rounded-3 w-100"
+              />
+            </div>
+          </div>
+          <div class="col-xl-6 offset-xl-1">
+            <div class="accordionContent border border-2 rounded-2">
+              <div class="singleItem firstItem">
+                <div
+                  class="itemHeader px-3 py-1 text-light d-flex justify-content-between align-items-center m-0"
+                >
+                  <h2 class="pointer w-75 m-0">Front-End Course</h2>
+                  <i class="fa-solid fa-plus fs-4 pointer w-25 text-end"></i>
+                  <i class="fa-solid fa-minus fs-4 pointer w-25 text-end"></i>
+                </div>
+                <div class="px-3 courseDesc active bg-light m-0">
+                  <p class="m-0 pt-2 pb-4">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Deleniti ea voluptatum, unde reprehenderit odio qui dolor
+                    provident quam facere ab id est vitae nobis nesciunt
+                    quisquam doloremque ipsum excepturi animi repellat!
+                    Laboriosam tempora numquam fugiat saepe quasi sed iusto
+                    quisquam.
+                  </p>
+                  <button
+                    class="btn btn-outline-dark primaryBtn border-2 px-4 mb-4"
+                  >
+                    Read More...
+                  </button>
+                </div>
+              </div>
+              <div class="singleItem">
+                <div
+                  class="itemHeader px-3 py-1 text-light d-flex justify-content-between align-items-center m-0"
+                >
+                  <h2 class="pointer w-75 m-0">Back-End Course</h2>
+                  <i class="fa-solid fa-plus fs-4 pointer w-25 text-end"></i>
+                  <i class="fa-solid fa-minus fs-4 pointer w-25 text-end"></i>
+                </div>
+                <div class="px-3 courseDesc bg-light m-0">
+                  <p class="m-0 pt-2 pb-4">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Deleniti ea voluptatum, unde reprehenderit odio qui dolor
+                    provident quam facere ab id est vitae nobis nesciunt
+                    quisquam doloremque ipsum excepturi animi repellat!
+                    Laboriosam tempora numquam fugiat saepe quasi sed iusto
+                    quisquam.
+                  </p>
+                  <button
+                    class="btn btn-outline-dark heroBtn accordionBtn border-2 px-4 mb-4"
+                  >
+                    Read More...
+                  </button>
+                </div>
+              </div>
+              <div class="singleItem">
+                <div
+                  class="itemHeader px-3 py-1 text-light d-flex justify-content-between align-items-center m-0"
+                >
+                  <h2 class="pointer w-75 m-0">Flutter Course</h2>
+                  <i class="fa-solid fa-plus fs-4 pointer w-25 text-end"></i>
+                  <i class="fa-solid fa-minus fs-4 pointer w-25 text-end"></i>
+                </div>
+                <div class="px-3 courseDesc bg-light m-0">
+                  <p class="m-0 pt-2 pb-4">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Deleniti ea voluptatum, unde reprehenderit odio qui dolor
+                    provident quam facere ab id est vitae nobis nesciunt
+                    quisquam doloremque ipsum excepturi animi repellat!
+                    Laboriosam tempora numquam fugiat saepe quasi sed iusto
+                    quisquam.
+                  </p>
+                  <button
+                    class="btn btn-outline-dark heroBtn accordionBtn border-2 px-4 mb-4"
+                  >
+                    Read More...
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of accordion -->
+
+    <!-- start of coundown timer -->
+    <section id="duration">
+      <div class="container-sm text-center">
+        <header>
+          <h2 class="counterTitle fs-1">Learn More, <span>Pay Less</span></h2>
+          <p class="fs-5 mb-5 saleDesc">
+            Enjoy discounts on all of our courses
+          </p>
+        </header>
+        <div class="row gy-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="remainingDays">
+              <i class="fa-solid fa-calendar-days fs-2 mb-3 mb-md-4"></i>
+              <p class="fs-5"></p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="remainingHours">
+              <i class="fa-solid fa-clock fs-2 mb-3 mb-md-4"></i>
+              <p class="fs-5"></p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="remainingMins">
+              <i class="fa-regular fa-hourglass-half fs-2 mb-3 mb-md-4"></i>
+              <p class="fs-5"></p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="remainingSec">
+              <i class="fa-solid fa-stopwatch fs-2 mb-3 mb-md-4"></i>
+              <p class="fs-5"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of coundown timer -->
+
+    <!-- start of Contact Section -->
+    <section id="contact">
+      <div class="container-sm text-center">
+        <header class="contactHeader">
+          <h2 class="fs-1 contactTitle"><span>Join</span> Us</h2>
+          <p class="fs-5 mb-5">Land your dream job by joining our courses</p>
+        </header>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="contactInfo text-start">
+              <h3 class="mb-3">Contact Info</h3>
+              <p class="mb-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                saepe unde sapiente aspernatur et molestiae ad natus itaque id.
+              </p>
+              <ul class="list-unstyled">
+                <li class="row mb-3 flex-nowrap align-items-start">
+                  <div class="col-1">
+                    <i class="fa-solid fa-location-dot fs-5"></i>
+                  </div>
+                  <div class="col-11">
+                    <span>New Street 22545, Nexa Road, New York City, USA</span>
+                  </div>
+                </li>
+                <li class="row mb-3 flex-nowrap align-items-start">
+                  <div class="col-1">
+                    <i class="fa-solid fa-envelope fs-5"></i>
+                  </div>
+                  <div class="col-11">
+                    <span>hello@uigrid.com</span>
+                  </div>
+                </li>
+                <li class="row mb-3 flex-nowrap align-items-start">
+                  <div class="col-1">
+                    <i class="fa-solid fa-mobile-screen-button fs-5"></i>
+                  </div>
+                  <div class="col-11">
+                    <span>001-000-000-000</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6 text-start">
+            <form action="" method="post">
+              <div class="mb-3">
+                <input
+                  type="text"
+                  placeholder="Your Name"
+                  class="form-control"
+                  name="fullName"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  placeholder="Your Email"
+                  class="form-control"
+                  name="email"
+                />
+              </div>
+              <div class="mb-3">
+                <textarea
+                  name="message"
+                  cols="30"
+                  rows="10"
+                  placeholder="Your Message"
+                  class="form-control"
+                  maxlength="100"
+                ></textarea>
+                <p class="my-2">
+                  <span class="charNo text-danger fw-semibold">100</span>
+                  characters remaining
+                </p>
+              </div>
+              <div class="mb-3">
+                <button type="submit" class="btn primaryBtn px-4">
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of Contact Section -->
+    <!-- end of main section -->
+
+    <!-- start of footer -->
+    <footer class="py-3">
+      <div class="footerContent text-light text-center">
+        <p class="m-0">Copyright &copy; 2023</p>
+      </div>
+    </footer>
+    <!-- end of footer -->
+
+    <!-- Bootstrap Js File -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- JQuery File -->
+    <script src="./js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <!-- Main Js File -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>

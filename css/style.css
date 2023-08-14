@@ -1,0 +1,219 @@
+/* start of general styling */
+:root {
+  --transparentBg: rgba(81, 91, 132, 0.6);
+  --lightBg: rgb(221, 223, 235);
+  --primaryColor: rgb(81, 91, 132);
+  --primarylight: rgb(108, 122, 176);
+  --primaryDark: rgb(31, 35, 50);
+}
+
+body {
+  font-family: "Bree Serif", serif;
+}
+
+.scrollUpBtn {
+  right: 20px;
+  bottom: 50px;
+  background-color: var(--primarylight);
+  color: white !important;
+  transition: background-color 500ms, color 500ms;
+}
+
+.scrollUpBtn:hover {
+  background-color: var(--transparentBg);
+  color: black !important;
+}
+/* end of general styling */
+
+/* start of cmmon styling */
+.pointer {
+  cursor: pointer;
+}
+
+.menuIcon:hover,
+.icon:hover {
+  background-color: var(--primaryColor) !important;
+}
+
+.primaryBtn {
+  border: 2px solid var(--primarylight) !important;
+  color: var(--primarylight) !important;
+  transition: color 200ms, background-color 800ms;
+}
+.primaryBtn:hover {
+  background-color: var(--primarylight) !important;
+  color: white !important;
+  border-color: transparent !important;
+}
+/* end of cmmon styling */
+
+/* start of header sec */
+body > header {
+  padding: 10px 0;
+  z-index: 1200;
+  transition: background-color 800ms, color 800ms;
+}
+
+.logo a {
+  color: var(--primaryColor);
+  font-size: calc(1.2rem + 0.2vw);
+}
+.icon {
+  background-color: var(--transparentBg);
+  width: 30px;
+  height: 30px;
+  transition: background-color 500ms;
+}
+
+.menuIcon {
+  width: 40px;
+  height: 40px;
+  color: var(--primaryColor);
+  transition: background-color 500ms, color 500ms;
+}
+.menuIcon:hover {
+  color: white !important;
+}
+
+.menuContent {
+  z-index: 999;
+  top: 0;
+  right: -322px;
+  padding: 30px 40px;
+  background-color: var(--primaryDark);
+  width: 0;
+}
+.menuContent li a,
+.menuContent li i {
+  transition: color 300ms;
+}
+.menuContent li a:hover,
+.menuContent li i:hover {
+  color: var(--primarylight) !important;
+}
+
+.menuIcons .icon:hover {
+  background-color: white !important;
+  color: var(--primaryColor) !important;
+}
+
+/* end of header sec */
+
+/* start of main section */
+/* 1. start of hero section */
+.hero {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.9)
+    ),
+    url(../imgs/e-learning.png);
+  height: 90vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+h1 span {
+  color: var(--primarylight) !important;
+}
+
+.heroBtn {
+  color: var(--primarylight) !important;
+  transition: background-color 500ms;
+}
+
+.heroBtn:hover {
+  background-color: white !important;
+}
+
+@media screen and (min-width: 768px) {
+  .heroDesc {
+    width: 60% !important;
+  }
+}
+/* 1. end of hero section */
+
+/* 2. start of accordion section */
+#details {
+  padding: 50px 0 80px 0;
+}
+.accordionImg {
+  border-color: var(--primaryColor) !important;
+}
+
+.accordionImg img {
+  transform: translate(25px, 25px);
+  box-shadow: 8px 8px 10px 1px var(--primaryColor);
+}
+
+.accordionContent {
+  background-color: var(--primaryColor) !important;
+}
+
+.courseDesc {
+  color: var(--primaryDark);
+}
+
+.courseDesc:not(.courseDesc.active),
+.fa-minus:not(.firstItem .fa-minus),
+.firstItem .fa-plus {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .accordionImg {
+    width: 60% !important;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .accordionImg {
+    width: 100% !important;
+  }
+}
+/* 2. end of accordion section */
+
+/* 3. start of countdown section */
+#duration {
+  padding: 50px 0;
+  background-color: var(--lightBg);
+}
+
+.counterTitle span {
+  color: var(--primaryColor);
+}
+/* 3. end of countdown section */
+/* 4. start of contact section */
+#contact {
+  padding: 50px 0;
+}
+.contactTitle span {
+  color: var(--primaryColor);
+}
+
+#contact i {
+  color: var(--primaryColor);
+}
+#contact form .form-control {
+  border: 2px solid var(--primarylight) !important;
+  transition: border-color 200ms, box-shadow 400ms;
+}
+#contact form .form-control:focus {
+  box-shadow: 0 0 5px 5px var(--transparentBg) !important;
+  border-color: transparent !important;
+  outline: none !important;
+}
+/* 4. end of contact section */
+/* start of media query of main sec */
+
+/* end of media query of main sec */
+/* end of main section */
+
+/* start of footer */
+footer {
+  background-color: var(--primaryDark);
+}
+/* start of media query of footer */
+
+/* end of media query of footer */
+
+/* end of footer */
