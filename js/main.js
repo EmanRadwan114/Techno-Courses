@@ -3,11 +3,11 @@ $(document).ready(function () {
   //todo: open menu when click on menu icon
   $(".menuIcon").click(() => {
     if (window.screen.width < 768) {
-      $(".menuContent").animate({ right: `0`, width: "100%" }, 800);
+      $(".menuContent").animate({ right: `0`, width: "100%" }, 700);
     } else if (window.screen.width > 768 && window.screen.width < 992) {
-      $(".menuContent").animate({ right: `0`, width: "50%" }, 800);
+      $(".menuContent").animate({ right: `0`, width: "50%" }, 700);
     } else if (window.screen.width > 992) {
-      $(".menuContent").animate({ right: `0`, width: "30%" }, 800);
+      $(".menuContent").animate({ right: `0`, width: "30%" }, 700);
     }
   });
 
@@ -16,7 +16,7 @@ $(document).ready(function () {
   let rightOffset = window.screen.width - offset; // substract offset from total client screen to get offset of menucontent from right
 
   $(".closeBtn i").click((e) => {
-    $(".menuContent").animate({ right: `${rightOffset}px`, width: "0" }, 1200);
+    $(".menuContent").animate({ right: `${rightOffset}px`, width: "0" }, 800);
   });
 
   //todo: add social icons to menu content when screen width is less than 992px
@@ -82,15 +82,11 @@ $(document).ready(function () {
 
   //todo: turn on smooth behavior on scroll
   $(".menuList li a").click((e) => {
+    e.preventDefault();
     let section = $(e.target).attr("href");
     let sectionOffset = $(section).offset().top;
-    $(".menuContent").animate(
-      { right: `${rightOffset}px`, width: "0" },
-      600,
-      (e) => {
-        $("html, body").animate({ scrollTop: sectionOffset - 50 }, 450);
-      }
-    );
+    $(".menuContent").animate({ right: `${rightOffset}px`, width: "0" }, 600);
+    $("html, body").animate({ scrollTop: sectionOffset - 50 }, 400);
   });
 
   //todo: create a function that make the countdown counter
