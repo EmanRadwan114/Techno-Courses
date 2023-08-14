@@ -83,7 +83,9 @@ $(document).ready(function () {
   $(".menuList li a").click((e) => {
     let section = $(e.target).attr("href");
     let sectionOffset = $(section).offset().top;
-    $("html, body").animate({ scrollTop: sectionOffset - 50 }, 450);
+    $("html, body").animate({ scrollTop: sectionOffset - 50 }, 450, (e) => {
+      $(".menuContent").animate({ right: `${rightOffset}px`, width: "0" }, 800);
+    });
   });
 
   //todo: create a function that make the countdown counter
