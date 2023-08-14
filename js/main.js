@@ -1,7 +1,9 @@
 $(document).ready(function () {
   //todo: open menu when click on menu icon
   $(".menuIcon").click(() => {
-    if (window.screen.width < 992) {
+    if (window.screen.width < 768) {
+      $(".menuContent").animate({ right: `0`, width: "100%" }, 800);
+    } else if (window.screen.width > 768 && window.screen.width < 992) {
       $(".menuContent").animate({ right: `0`, width: "50%" }, 800);
     } else if (window.screen.width > 992) {
       $(".menuContent").animate({ right: `0`, width: "30%" }, 800);
@@ -12,7 +14,7 @@ $(document).ready(function () {
   let offset = $(".menuContent").offset().left; //get offset of menucontent from left
   let rightOffset = window.screen.width - offset; // substract offset from total client screen to get offset of menucontent from right
 
-  $(".closeBtn").click(() => {
+  $(".closeBtn i").click((e) => {
     $(".menuContent").animate({ right: `${rightOffset}px`, width: "0" }, 1200);
   });
 
